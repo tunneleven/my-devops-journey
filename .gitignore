@@ -9,7 +9,7 @@
 .terraformrc
 terraform.rc
 variables.tf
-journal/
+*.tfplan
 # Crash log files
 crash.log
 crash.*.log
@@ -21,7 +21,7 @@ override.tf.json
 *_override.tf.json
 
 # IDE
-.agent
+
 .vscode/
 .idea/
 *.swp
@@ -35,6 +35,7 @@ Thumbs.db
 # Environment variables
 .env
 .envrc
+reference/
 
 # SSH keys
 *.pem
