@@ -1,0 +1,8 @@
+Front,Back,Tag
+"How do you hide a variable's value in the CLI output?","sensitive = true","terraform-variables"
+"Which block is used to enforce custom rules on a variable?","validation { condition = ... error_message = ... }","terraform-variables"
+"What is the difference between var and local?","var is input (user-defined), local is calculated internal logic/constants.","terraform-core"
+"How do you expose a value (like an IP or URL) to the user after apply?","output ""name"" { value = ... }","terraform-outputs"
+"Where should you define your input variables?","variables.tf","terraform-best-practices"
+"Command to interactively test HCL expressions?","terraform console","terraform-cli"
+"How do you reference an input variable in main.tf?","var.variable_name","terraform-syntax"

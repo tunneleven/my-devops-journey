@@ -622,7 +622,12 @@ User signs in → Gets Token → Exchange for AWS Credentials → Access S3
 | EC2 Patching | Customer responsibility |
 | RDS Patching | AWS responsibility |
 | Credentials Report | Account-level user audit |
-| Access Advisor | User-level permission review |
+| Access Advisor | User-level permission review (shows last accessed) |
+| **Access Analyzer** | Finds resources shared externally (public S3, cross-account) |
+| **Policy Evaluation** | Explicit Deny always wins over Allow |
+| **Access Keys vs Password** | Access Keys = CLI/API; Password = Console login |
+| **SCPs** | Restrict what member accounts can do (guardrails, not grants) |
+| **Permission Sets** | Reusable permission bundles in IAM Identity Center |
 | **Cognito User Pools** | User directory, sign-up/sign-in for apps |
 | **Cognito Identity Pools** | Temporary AWS credentials for app users |
 | **Cognito vs IAM** | Cognito = app users (millions), IAM = AWS access |

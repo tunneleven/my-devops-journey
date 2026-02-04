@@ -1,0 +1,11 @@
+Question,Answer
+What is the purpose of `locals`?,Creates reusable named expressions within a module. Unlike variables, locals are not exposed to callers.
+When should you use `locals` instead of `variable`?,Use locals for computed values, constants, or expressions derived from other variables. Use variable for values that come from callers.
+What does `try(expression, fallback)` do?,Attempts an expression and returns the fallback value if it fails (e.g., null values or missing keys).
+What does `can(expression)` return?,Returns `true` if expression succeeds, `false` if it fails. Does NOT return the value.
+How do you format a number with leading zeros?,Use `format("%03d", 5)` which returns `"005"`. The `%03d` means pad to 3 digits with zeros.
+What function combines two maps?,`merge(map1, map2)` - Later maps override earlier ones for duplicate keys.
+How do you safely access a nested map key that might not exist?,Use `try(var.config.nested.key, "default")` to provide a fallback.
+What function removes duplicates from a list?,`distinct(list)` - Returns a list with duplicate elements removed.
+How do you read a file and render variables into it?,Use `templatefile("path.tpl", { var1 = value1 })` to render a template with variable substitution.
+What's the difference between `file()` and `templatefile()`?,`file()` reads raw content. `templatefile()` reads and renders variables using `${var}` syntax.

@@ -1,0 +1,23 @@
+Front,Back,Category
+"What is `docker_network` resource?","Creates custom Docker networks for container communication. Must be created BEFORE containers that use it (dependency order).","Network"
+"What are the 5 Docker network drivers?","1. **bridge** (default) - single-host
+2. **overlay** - multi-host (Swarm)
+3. **host** - direct host network
+4. **none** - no networking
+5. **macvlan** - physical LAN access","Network Drivers"
+"When to use `bridge` driver?","Local development, Docker Compose stacks, CI/CD pipelines. Default choice for single-host deployments.","Network Drivers"
+"When to use `overlay` driver?","Docker Swarm, multi-host deployments, distributed microservices across different servers.","Network Drivers"
+"When to use `host` driver?","Performance-critical apps (no isolation), network monitoring tools like Prometheus that need to see all host traffic.","Network Drivers"
+"When to use `none` driver?","Maximum security isolation, offline batch jobs, testing network-free behavior. Container has only loopback.","Network Drivers"
+"When to use `macvlan` driver?","Legacy apps needing physical network access, IoT gateways, containers that must appear as physical devices on LAN.","Network Drivers"
+"Where do container ports (3000, 5432) come from?","From the **application code** or **Docker image** (EXPOSE instruction), NOT from Terraform. Terraform only manages network connections.","Ports"
+"What does `ports` block do vs network communication?","**ports block**: Maps container port to HOST (external access). **Network**: Containers on same network reach each other directly without ports block.","Ports"
+"When is `ports` block needed?","Only for Host→Container or External→Container access. NOT needed for Container→Container on same network.","Ports"
+"When to use `host_path` (bind mount)?","**Development**: Live code editing, config files, log access, build artifacts. Changes sync instantly between host and container.","Volumes"
+"When to use `volume_name` (named volume)?","**Production**: Database storage, persistent data, uploaded files. Docker-managed, portable, better performance.","Volumes"
+"What's the key difference: bind mount vs named volume?","**Bind mount**: You control location on host, not portable. **Named volume**: Docker manages location, portable across hosts.","Volumes"
+"What is `aliases` in `networks_advanced`?","Extra DNS names (nicknames) for reaching the container within the network. You choose any value - NOT the container name.","Aliases"
+"Container name vs Aliases - what's the difference?","**name**: Docker identity (required, unique). **aliases**: Optional DNS nicknames within network. Both resolve to same container IP.","Aliases"
+"Why use aliases?","1. Shorter names (`web` instead of `myapp_prod_nginx_v2`)
+2. Service discovery (multiple containers share `api` alias)
+3. Role-based naming (`db-write`, `db-read`)","Aliases"

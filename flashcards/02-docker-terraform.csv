@@ -1,0 +1,8 @@
+Front,Back,Tag
+"What is the name of the community standard Docker provider?","kreuzwerker/docker","terraform-docker"
+"What Terraform function must be used for bind mount host paths?","abspath()","terraform-functions"
+"Which argument prevents a docker_image from being deleted on destroy?","keep_locally = true","terraform-docker"
+"What is the default path for the Docker daemon socket on Linux?","unix:///var/run/docker.sock","docker-core"
+"Where does Terraform store the state of your infrastructure?","terraform.tfstate file","terraform-core"
+"Where does Docker Compose store the state of your containers?","It doesn't. It checks the Runtime State (Daemon) directly.","docker-compose"
+"Which resource block is used to create a custom bridge network?","resource ""docker_network""","terraform-docker"

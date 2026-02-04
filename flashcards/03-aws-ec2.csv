@@ -1,0 +1,7 @@
+Front,Back,Tag
+"What Terraform block is used to READ information from AWS?","data block (e.g., data ""aws_ami"")","terraform-core"
+"What is the default AWS region if none is specified?","It errors! You must specify a region in the provider or ENV vars.","aws-provider"
+"Which Security Group rule direction controls inbound traffic?","ingress","aws-networking"
+"What is the ID of the 'canonical' owner for Ubuntu AMIs?","099720109477","aws-facts"
+"If you omit the 'egress' block in a Security Group, what happens?","Terraform removes the default rule, blocking ALL outbound traffic.","aws-networking"
+"What attribute attaches a Security Group to an EC2 instance?","vpc_security_group_ids (list)","aws-resources"

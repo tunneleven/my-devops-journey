@@ -1,0 +1,11 @@
+Question,Answer
+What does `count` do in Terraform?,Creates multiple instances of a resource based on a number. Each instance gets an index (0, 1, 2...).
+What does `for_each` do in Terraform?,Creates instances based on a map or set. Each instance has a key (not an index).
+What is `count.index`?,Zero-based index of the current instance when using count (0, 1, 2...).
+What are `each.key` and `each.value`?,Properties available inside for_each. Key is the map key or set element. Value is the map value (same as key for sets).
+What is the "index shift" problem with count?,"If you remove an item from the middle of a list, all subsequent indices shift, causing unintended destroys/recreates."
+Why is for_each better than count for named resources?,for_each uses keys instead of indices, so removing an item only affects that specific resource without shifting others.
+What is a splat expression?,Syntax `[*]` that extracts a list of attribute values from a collection. Example: `resource[*].id`
+How do you convert a list to a set for for_each?,Use `toset(["a", "b", "c"])` - for_each requires a set or map, not a list.
+How do you conditionally create a resource?,Use `count = condition ? 1 : 0`. If condition is true, resource exists. If false, it doesn't.
+What is a dynamic block used for?,Generates nested blocks dynamically. Used for resources with repeatable sub-blocks like security group rules.

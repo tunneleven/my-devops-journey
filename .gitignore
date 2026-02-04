@@ -8,7 +8,6 @@
 !*.tfvars.example
 .terraformrc
 terraform.rc
-variables.tf
 *.tfplan
 # Crash log files
 crash.log
