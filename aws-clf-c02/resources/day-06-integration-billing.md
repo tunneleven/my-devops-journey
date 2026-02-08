@@ -248,18 +248,57 @@ Client → API Gateway → Lambda → DynamoDB
 
 ### AWS Health Dashboard
 
-**What:** View the health status of AWS services.
+**What:** View the health status of AWS services and YOUR resources.
 
-**Two Types:**
+**Two Dashboards (Know the difference!):**
 
-| Type | What It Shows |
-|------|---------------|
-| **Service Health** | Global AWS service status (outages, maintenance) |
-| **Personal Health** | Events affecting YOUR resources specifically |
+| Dashboard | What It Shows | Personalized? | Who Sees It |
+|-----------|---------------|---------------|-------------|
+| **Service Health Dashboard** | Global AWS service status | ❌ No | Everyone (public) |
+| **Your Account Health Dashboard** | Events affecting YOUR resources | ✅ Yes | Only you |
 
-**Exam Pattern:**
-> "Check if AWS is experiencing an outage affecting my resources..."
-> → Answer: **Personal Health Dashboard**
+### Service Health Dashboard
+
+```
+"EC2 is experiencing connectivity issues in us-east-1"
+     ↓
+Everyone sees this announcement
+(not specific to your account)
+```
+
+**Use For:**
+- Check if AWS is having a global outage
+- View scheduled maintenance
+- Historical uptime data
+
+---
+
+### Your Account Health Dashboard (EXAM FAVORITE!)
+
+```
+"Your RDS instance db-prod in us-east-1 is scheduled 
+ for hardware maintenance on Feb 15, 2025"
+     ↓
+Only YOU see this (personalized to your resources!)
+```
+
+**Features:**
+- Alerts specific to YOUR resources
+- Proactive notifications
+- Remediation guidance
+- Integration with EventBridge for automation
+
+**Exam Patterns:**
+
+| Question Keyword | Answer |
+|------------------|--------|
+| "Personalized view of AWS status" | **Your Account Health** |
+| "Events affecting YOUR resources" | **Your Account Health** |
+| "YOUR Cloud architecture" | **Your Account Health** |
+| "General AWS outage status" | Service Health |
+| "Global AWS service status" | Service Health |
+
+> **Exam Tip:** The word "**personalized**" or "**your**" → Answer is **Your Account Health Dashboard**
 
 ---
 
@@ -486,6 +525,66 @@ Client → API Gateway → Lambda → DynamoDB
 - **Developer:** $29, email only
 - **Business:** $100, 24/7 phone, <1 hr urgent
 - **Enterprise:** $15k, TAM, <15 min critical
+
+---
+
+## 🤝 Part 6: AWS Partner Network (APN)
+
+### What Is APN?
+
+**AWS Partner Network** is a global community of partners that use AWS to build solutions and services for customers.
+
+### Two Types of Partners
+
+| Partner Type | What They Do | Use For |
+|--------------|--------------|---------|
+| **APN Consulting Partner** | Professional services firms | Migration help, expert advice, implementation |
+| **APN Technology Partner** | Software/SaaS companies | Tools that integrate with AWS |
+
+### APN Consulting Partner
+
+**Who:** Companies like Accenture, Deloitte, Capgemini, Infosys.
+
+**Services:**
+- Cloud migration planning
+- Architecture design
+- Implementation & deployment
+- Managed services
+
+**Exam Pattern:**
+> "A company wants expert professional advice on migrating to AWS..."
+> → Answer: **APN Consulting Partner**
+
+---
+
+### APN Technology Partner
+
+**Who:** Software vendors like Splunk, Datadog, MongoDB.
+
+**What They Offer:**
+- Software products hosted on AWS
+- Tools that integrate with AWS services
+- SaaS solutions on AWS Marketplace
+
+**Exam Pattern:**
+> "A company needs monitoring software that integrates with AWS..."
+> → Answer: **APN Technology Partner** (or check AWS Marketplace)
+
+---
+
+### Consulting vs Technology
+
+| Question Keyword | Answer |
+|------------------|--------|
+| "Expert advice" | **Consulting Partner** |
+| "Migration help" | **Consulting Partner** |
+| "Professional services" | **Consulting Partner** |
+| "Software integration" | **Technology Partner** |
+| "SaaS product" | **Technology Partner** |
+
+### 📌 Quick Summary: APN
+- **Consulting Partner:** People who help you (services)
+- **Technology Partner:** Products that work with AWS (software)
 
 ---
 
