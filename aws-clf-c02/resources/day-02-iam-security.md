@@ -17,6 +17,23 @@ By the end of Day 2, you will be able to:
 
 ---
 
+## 📋 Services You'll Meet Today
+
+> These services are referenced. Full explanations come in the listed days!
+
+| Service | What It Does | Deep Dive |
+|---------|--------------|-----------|
+| **Security Groups** | Instance-level firewall | Day 3 |
+| **NACLs** | Subnet-level firewall | Day 3 |
+| **VPC** | Virtual network | Day 3 |
+| **EC2** | Virtual servers | Day 4 |
+| **RDS** | Managed databases | Day 5 |
+| **Lambda** | Serverless functions | Day 5 |
+
+📖 **Quick Reference:** [AWS Glossary](../notes/glossary.md)
+
+---
+
 ## 📖 How to Use This Resource
 
 1. **Understand** concepts using the explanations and real-world scenarios

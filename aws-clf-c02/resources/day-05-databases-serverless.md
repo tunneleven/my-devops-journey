@@ -17,6 +17,22 @@ By the end of Day 5, you will be able to:
 
 ---
 
+## 📋 Services You'll Meet Today
+
+> Prerequisites from Days 2-4.
+
+| Service | What It Does | Status |
+|---------|--------------|--------|
+| **IAM** | Identity & access | Day 2 ✅ Required |
+| **VPC** | Virtual network | Day 3 ✅ Required |
+| **EC2** | Virtual servers | Day 4 ✅ Required |
+| **S3** | Object storage | Day 4 ✅ Required |
+| **CloudWatch** | Monitoring | Day 6 (mentioned) |
+
+📖 **Quick Reference:** [AWS Glossary](../notes/glossary.md)
+
+---
+
 ## 📖 How to Use This Resource
 
 1. **Focus on** service selection—exam tests "which database/service for this use case?"

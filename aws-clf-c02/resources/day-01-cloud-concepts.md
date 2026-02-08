@@ -16,6 +16,24 @@ By the end of Day 1, you will be able to:
 
 ---
 
+## 📋 Services You'll Meet Today
+
+> These services appear in examples. Full explanations come later!
+
+| Service | What It Does | Deep Dive |
+|---------|--------------|-----------|
+| **EC2** | Virtual servers | Day 4 |
+| **RDS** | Managed databases | Day 5 |
+| **Lambda** | Serverless functions | Day 5 |
+| **S3** | Object storage | Day 4 |
+| **CloudFront** | Content delivery network | Day 4 |
+| **CloudFormation** | Infrastructure as Code | Day 6 |
+| **CloudWatch** | Monitoring & alarms | Day 6 |
+
+📖 **Quick Reference:** [AWS Glossary](../notes/glossary.md)
+
+---
+
 ## 📖 How to Use This Resource
 
 1. **Read** each section thoroughly (don't skim!)

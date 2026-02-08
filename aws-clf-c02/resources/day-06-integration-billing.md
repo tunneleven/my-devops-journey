@@ -21,6 +21,22 @@ By the end of Day 6, you will be able to:
 
 ---
 
+## 📋 Services You'll Meet Today
+
+> Prerequisites from Days 2-5.
+
+| Service | What It Does | Status |
+|---------|--------------|--------|
+| **IAM** | Identity & access | Day 2 ✅ Required |
+| **EC2** | Virtual servers | Day 4 ✅ Required |
+| **S3** | Object storage | Day 4 ✅ Required |
+| **Lambda** | Serverless functions | Day 5 ✅ Required |
+| **RDS** | Managed databases | Day 5 ✅ Required |
+
+📖 **Quick Reference:** [AWS Glossary](../notes/glossary.md)
+
+---
+
 ## 📖 How to Use This Resource
 
 1. **Master the Support Plans table** - easy points if you memorize the features/response times.

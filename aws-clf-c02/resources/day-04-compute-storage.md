@@ -17,6 +17,22 @@ By the end of Day 4, you will be able to:
 
 ---
 
+## 📋 Services You'll Meet Today
+
+> Prerequisites from earlier days.
+
+| Service | What It Does | Status |
+|---------|--------------|--------|
+| **IAM** | Identity & access | Day 2 ✅ Required |
+| **VPC** | Virtual network | Day 3 ✅ Required |
+| **Security Groups** | Instance firewall | Day 3 ✅ Required |
+| **CloudWatch** | Monitoring & alarms | Day 6 (mentioned) |
+| **Lambda** | Serverless functions | Day 5 (mentioned) |
+
+📖 **Quick Reference:** [AWS Glossary](../notes/glossary.md)
+
+---
+
 ## 📖 How to Use This Resource
 
 1. **Understand** the trade-offs between services (when to use which)

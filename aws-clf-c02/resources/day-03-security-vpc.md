@@ -17,6 +17,23 @@ By the end of Day 3, you will be able to:
 
 ---
 
+## 📋 Services You'll Meet Today
+
+> Prerequisites from Day 2 and services used in examples.
+
+| Service | What It Does | Status |
+|---------|--------------|--------|
+| **IAM** | Identity & access | Day 2 ✅ Required |
+| **EC2** | Virtual servers | Day 4 (examples) |
+| **RDS** | Managed databases | Day 5 (examples) |
+| **S3** | Object storage | Day 4 (examples) |
+| **CloudFront** | CDN | Day 4 (examples) |
+| **ALB** | Application Load Balancer | Day 4 (examples) |
+
+📖 **Quick Reference:** [AWS Glossary](../notes/glossary.md)
+
+---
+
 ## 📖 How to Use This Resource
 
 1. **Understand** how each security service solves a specific problem

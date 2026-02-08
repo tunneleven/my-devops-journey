@@ -15,6 +15,23 @@ By the end of Day 7, you will be able to:
 
 ---
 
+## 📋 Services You'll Meet Today
+
+> This is the final review day. All prior days are prerequisites!
+
+| Day | Core Topics | Status |
+|-----|-------------|--------|
+| Day 1 | Cloud Concepts, Well-Architected | ✅ Required |
+| Day 2 | IAM, Security, Cognito | ✅ Required |
+| Day 3 | VPC, Networking, WAF, Shield | ✅ Required |
+| Day 4 | EC2, S3, EBS, CloudFront | ✅ Required |
+| Day 5 | RDS, DynamoDB, Lambda, Containers | ✅ Required |
+| Day 6 | SQS, SNS, CloudWatch, Billing | ✅ Required |
+
+📖 **Quick Reference:** [AWS Glossary](../notes/glossary.md)
+
+---
+
 ## 📖 How to Use This Resource
 
 1. **Study ML services first** (1-2 hours) - know what each does
