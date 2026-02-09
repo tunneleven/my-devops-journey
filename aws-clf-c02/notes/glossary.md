@@ -9,7 +9,7 @@
 | Service | What It Does | Deep Dive |
 |---------|--------------|-----------|
 | **EC2** | Virtual servers (IaaS) | [Day 4](../resources/day-04-compute-storage.md) |
-| **Lambda** | Serverless functions (FaaS) | [Day 5](../resources/day-05-databases-serverless.md) |
+| **Lambda** | Serverless functions (FaaS) | [Day 5](../resources/day-05-databases-serverless.md), [Note](day-05-databases-serverless/lambda.md) |
 | **Elastic Beanstalk** | Deploy apps without managing infra (PaaS) | [Day 6](../resources/day-06-integration-billing.md) |
 | **ECS** | Run Docker containers | [Day 5](../resources/day-05-databases-serverless.md) |
 | **EKS** | Managed Kubernetes | [Day 5](../resources/day-05-databases-serverless.md) |
