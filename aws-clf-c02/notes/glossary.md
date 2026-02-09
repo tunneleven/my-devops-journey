@@ -36,13 +36,27 @@
 
 | Service | What It Does | Deep Dive |
 |---------|--------------|-----------|
-| **RDS** | Managed relational databases | [Day 5](../resources/day-05-databases-serverless.md) |
-| **Aurora** | AWS-optimized MySQL/PostgreSQL | [Day 5](../resources/day-05-databases-serverless.md) |
-| **DynamoDB** | NoSQL key-value database | [Day 5](../resources/day-05-databases-serverless.md) |
-| **ElastiCache** | In-memory cache (Redis/Memcached) | [Day 5](../resources/day-05-databases-serverless.md) |
-| **Redshift** | Data warehouse for analytics | [Day 5](../resources/day-05-databases-serverless.md) |
-| **DocumentDB** | MongoDB-compatible database | [Day 5](../resources/day-05-databases-serverless.md) |
-| **Neptune** | Graph database | [Day 5](../resources/day-05-databases-serverless.md) |
+| **RDS** | Managed relational databases | [Day 5](../resources/day-05-databases-serverless.md), [Note](day-05-databases-serverless/rds.md) |
+| **Aurora** | AWS-optimized MySQL/PostgreSQL | [Day 5](../resources/day-05-databases-serverless.md), [Note](day-05-databases-serverless/aurora.md) |
+| **DynamoDB** | NoSQL key-value database | [Day 5](../resources/day-05-databases-serverless.md), [Note](day-05-databases-serverless/dynamodb.md) |
+| **ElastiCache** | In-memory cache (Redis/Memcached) | [Day 5](../resources/day-05-databases-serverless.md), [Note](day-05-databases-serverless/elasticache-redshift.md) |
+| **Redshift** | Data warehouse for analytics | [Day 5](../resources/day-05-databases-serverless.md), [Note](day-05-databases-serverless/elasticache-redshift.md) |
+| **DocumentDB** | MongoDB-compatible database | [Day 5](../resources/day-05-databases-serverless.md), [Note](day-05-databases-serverless/specialty-databases.md) |
+| **Neptune** | Graph database | [Day 5](../resources/day-05-databases-serverless.md), [Note](day-05-databases-serverless/specialty-databases.md) |
+| **Timestream** | Time-series database | [Day 5](../resources/day-05-databases-serverless.md), [Note](day-05-databases-serverless/specialty-databases.md) |
+| **QLDB** | Immutable ledger database | [Day 5](../resources/day-05-databases-serverless.md), [Note](day-05-databases-serverless/specialty-databases.md) |
+| **Keyspaces** | Cassandra-compatible database | [Day 5](../resources/day-05-databases-serverless.md), [Note](day-05-databases-serverless/specialty-databases.md) |
+
+---
+
+## Analytics
+
+| Service | What It Does | Deep Dive |
+|---------|--------------|-----------|
+| **Athena** | SQL queries on S3 (serverless) | [Day 5](../resources/day-05-databases-serverless.md), [Note](day-05-databases-serverless/analytics-services.md) |
+| **Glue** | ETL and Data Catalog | [Day 5](../resources/day-05-databases-serverless.md), [Note](day-05-databases-serverless/analytics-services.md) |
+| **EMR** | Managed Hadoop/Spark | [Day 5](../resources/day-05-databases-serverless.md), [Note](day-05-databases-serverless/analytics-services.md) |
+| **QuickSight** | Serverless BI dashboards | [Day 5](../resources/day-05-databases-serverless.md), [Note](day-05-databases-serverless/analytics-services.md) |
 
 ---
 
@@ -73,21 +87,21 @@
 
 | Service | What It Does | Deep Dive |
 |---------|--------------|-----------|
-| **IAM** | Users, roles, permissions | [Day 2](../resources/day-02-iam-security.md) |
-| **IAM Identity Center** | Single sign-on for AWS accounts | [Day 2](../resources/day-02-iam-security.md), [Note](iam-identity-center.md) |
-| **Cognito** | User auth for apps | [Day 2](../resources/day-02-iam-security.md), [Note](amazon-cognito.md) |
-| **Organizations** | Manage multiple AWS accounts | [Day 2](../resources/day-02-iam-security.md), [Note](aws-organizations.md) |
-| **WAF** | Web application firewall | [Day 3](../resources/day-03-security-vpc.md), [Note](aws-waf.md) |
-| **Shield** | DDoS protection | [Day 3](../resources/day-03-security-vpc.md), [Note](aws-shield.md) |
-| **GuardDuty** | Threat detection (ML-based) | [Day 3](../resources/day-03-security-vpc.md) |
-| **Inspector** | Vulnerability scanning | [Day 3](../resources/day-03-security-vpc.md) |
-| **Macie** | PII detection in S3 | [Day 3](../resources/day-03-security-vpc.md) |
-| **KMS** | Encryption key management | [Day 3](../resources/day-03-security-vpc.md) |
-| **CloudHSM** | Dedicated hardware encryption | [Day 3](../resources/day-03-security-vpc.md) |
-| **Secrets Manager** | Store and rotate secrets | [Day 3](../resources/day-03-security-vpc.md) |
-| **ACM** | SSL/TLS certificates | [Day 3](../resources/day-03-security-vpc.md) |
-| **Security Hub** | Centralized security dashboard | [Day 3](../resources/day-03-security-vpc.md) |
-| **Artifact** | AWS compliance reports | [Day 3](../resources/day-03-security-vpc.md) |
+| **IAM** | Users, roles, permissions | [Day 2](../resources/day-02-iam-security.md), [Note](day-02-iam-security/iam.md) |
+| **IAM Identity Center** | Single sign-on for AWS accounts | [Day 2](../resources/day-02-iam-security.md), [Note](day-02-iam-security/iam-identity-center.md) |
+| **Cognito** | User auth for apps | [Day 2](../resources/day-02-iam-security.md), [Note](day-02-iam-security/amazon-cognito.md) |
+| **Organizations** | Manage multiple AWS accounts | [Day 2](../resources/day-02-iam-security.md), [Note](day-02-iam-security/aws-organizations.md) |
+| **WAF** | Web application firewall | [Day 3](../resources/day-03-security-vpc.md), [Note](day-03-security-vpc/aws-waf.md) |
+| **Shield** | DDoS protection | [Day 3](../resources/day-03-security-vpc.md), [Note](day-03-security-vpc/aws-shield.md) |
+| **GuardDuty** | Threat detection (ML-based) | [Day 3](../resources/day-03-security-vpc.md), [Note](day-03-security-vpc/threat-detection-services.md) |
+| **Inspector** | Vulnerability scanning | [Day 3](../resources/day-03-security-vpc.md), [Note](day-03-security-vpc/threat-detection-services.md) |
+| **Macie** | PII detection in S3 | [Day 3](../resources/day-03-security-vpc.md), [Note](day-03-security-vpc/threat-detection-services.md) |
+| **KMS** | Encryption key management | [Day 3](../resources/day-03-security-vpc.md), [Note](day-03-security-vpc/aws-kms.md) |
+| **CloudHSM** | Dedicated hardware encryption | [Day 3](../resources/day-03-security-vpc.md), [Note](day-03-security-vpc/aws-cloudhsm.md) |
+| **Secrets Manager** | Store and rotate secrets | [Day 3](../resources/day-03-security-vpc.md), [Note](day-03-security-vpc/aws-secrets-manager.md) |
+| **ACM** | SSL/TLS certificates | [Day 3](../resources/day-03-security-vpc.md), [Note](day-03-security-vpc/aws-certificate-manager.md) |
+| **Security Hub** | Centralized security dashboard | [Day 3](../resources/day-03-security-vpc.md), [Note](day-03-security-vpc/aws-security-hub.md) |
+| **Artifact** | AWS compliance reports | [Day 3](../resources/day-03-security-vpc.md), [Note](day-03-security-vpc/aws-artifact.md) |
 
 ---
 
